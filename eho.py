@@ -1,7 +1,9 @@
 import telebot
 
+from config import BOT_TOKEN
 
-bot = telebot.TeleBot("5143965673:AAFmsqtlpibTzMl6K_bs0VT_4lFfrcH4mQo")
+
+bot = telebot.TeleBot(BOT_TOKEN)
 
 
 @bot.message_handler(func=lambda m: True)
